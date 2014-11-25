@@ -25,9 +25,9 @@ var foldText={
 			};
 			
       obj.initialText=$(this).text();
-			obj.initialHeight=$(this).height();
+			obj.initialHeight=$(this).height()-10;
 			
-			obj.shortText=obj.initialText.substr(0,showNum)+'...';
+			obj.shortText=obj.initialText.substr(0,showNum)+' ...';
 			
 			$(this).text(obj.shortText);
 			obj.shortHeight=$(this).height();
@@ -57,9 +57,6 @@ var foldText={
 				return false;
 			})
     });
-	},
-	toggle:function(element){
-		alert(element);
 	}
 	
 }

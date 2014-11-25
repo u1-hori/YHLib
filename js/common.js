@@ -5,5 +5,5 @@ $(document).ready(function(){
 });
 
 function init(){
-	foldText.init(80);
+	foldText.init(40);
 }
