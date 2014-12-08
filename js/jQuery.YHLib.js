@@ -85,3 +85,30 @@ var smoothAncor={
    });
 	}
 };
+
+//----------------------------------------------------------
+//要素の高さを揃える
+//selectorに2個以上のブロックのクラスを指定
+//----------------------------------------------------------
+
+
+function uniformHeight(selector){
+  var $foo = $(selector);
+  //div 要素（class="foo"）の総数
+  var foo_length = $foo.length;
+  
+  //横の列（行）それぞれについて実行
+  for(var i = 0 ; i < Math.ceil(foo_length / 4) ; i++) {
+    var maxHeight = 0;
+    //同じ横の列（行）のそれぞれの要素について実行
+    for(var j = 0; j < 4; j++){
+      if ($foo.eq(i * 4 + j).height() > maxHeight) { 
+        maxHeight = $foo.eq(i * 4 + j).height(); 
+      }
+    }
+    //要素の高さの最大値をそれぞれの要素の高さとして設定
+    for(var k = 0; k < 4; k++){
+      $foo.eq(i * 4 + k).height(maxHeight); 
+    }
+  }
+}
