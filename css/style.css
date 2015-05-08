@@ -1,7 +1,23 @@
 
 /*General*/
 /***********************************************************/
-body{font-size:21px; line-height:1.4em}
+
+body, div, dl, dt, dd, ul, ul li, h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+	line-height: 160%;
+}
+
+body {
+	font-family: 'ƒƒCƒŠƒI',Meiryo,'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+	color: #333;
+	font-size: 21px
+	line-height: 1.4em;
+	text-align: left;
+	background-color: #e5e5e5;
+	-webkit-text-size-adjust: 100%;
+}
 
 a{  outline:none;}
 a:focus { outline:none;}
@@ -11,6 +27,23 @@ a:hover {	text-decoration: none;}
 .wrapper{
 	width:100%;
 	text-align:center;
+}
+
+/*padding‚Ìƒuƒ‰ƒEƒU·ˆÙ‰ğÁi“à‘¤‚Ì—]”’w’è‚É‚·‚éj*/
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/*ClearFix*/
+.ClearFix {zoom: 1;}
+.ClearFix:after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 /*Contents*/
